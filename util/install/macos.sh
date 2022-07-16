@@ -9,6 +9,7 @@ _qmk_install_prepare() {
         return 1
     fi
 
+    # brew update && brew upgrade --formulae --ignore-pinned
     arch -arm64 brew update && arch -arm64 brew upgrade --ignore-pinned
 }
 
